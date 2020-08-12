@@ -1,0 +1,18 @@
+@font-face {
+    font-family: "Letras1";
+    src: url("../letras/LinLibertine_RB.ttf")format('truetype');
+  }
+
+body{
+background-image: url("../img/nuevo_fondo.jpg");
+background-size: cover;
+
+}
+#barra{
+  background-color: #6c757d;
+
+}
+#tabla1{
+  text-align: center;
+  
+}

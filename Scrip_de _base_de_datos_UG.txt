@@ -1,0 +1,27 @@
+create database solicitud
+
+
+create table tbl_tiposolicitud(id_tiposolicitud int auto_increment not null primary key,
+nombre_tiposolicitud varchar(100),descripcion_tiposolicitud varchar(10000));
+
+create table tbl_solicitud(id_solicitud int auto_increment not null primary key,solicitante varchar(150),
+NUA varchar(60), semestre int,carrera varchar(150),
+fecha_solicitud varchar(150),correo_solicitud varchar(150),
+folio_solicitud int,estatus_solicitud varchar(40),
+observaciones varchar(10000),id_tiposolicitud int not null,
+foreign key (id_tiposolicitud) references tbl_tiposolicitud(id_tiposolicitud));
+
+create table tbl_solicitud_enviada(id_solicitud_enviada int auto_increment not null primary key,id_solicitud int not null, 
+foreign key (id_solicitud ) references tbl_solicitud(id_solicitud),
+nombre_solicitud_enviada varchar(150),ruta_archivo varchar(150));
+
+create table tbl_datosFirmante_resp(id_datosFirmante_resp int auto_increment not null primary key,
+apellido_P varchar(100),apellido_M varchar(100),nombres_datosFirmante_resp varchar(150)
+,titulo_datosFirmante_resp varchar(200),activo int);
+
+create table tbl_solicitud_respuesta(id_solicitud_respuesta int auto_increment not null primary key,id_solicitud int not null, 
+foreign key (id_solicitud ) references tbl_solicitud(id_solicitud),respuesta varchar(50),
+fecha_respuesta varchar(150),id_datosFirmante_resp int not null,
+foreign key (id_datosFirmante_resp ) references tbl_datosFirmante_resp(id_datosFirmante_resp));
+
+ 

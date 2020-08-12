@@ -1,0 +1,32 @@
+body{
+    background-image: url("../img/fondo_form3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@font-face {
+    font-family: "Letras1";
+    src: url("../letras/monofonto/monofonto.ttf")format('truetype');
+  }
+
+#formulario{ 
+    top: 130px;
+    background-color: rgba(0, 0, 0, .75);
+    font-family: Letras1;
+    color: seashell;
+    border-radius: 5px;
+    border: solid;
+    border-color: rgb(202, 174, 116); 
+}
+hr{background-color: rgb(202, 174, 116); }
+#titulo_form{
+    font-family: Letras1;
+    color: seashell;
+    text-align: center;
+    font-size: 30px;
+    
+}
+
+#modalLab{
+    background-color: rgba(236, 163, 16, 0.651);
+}
+
