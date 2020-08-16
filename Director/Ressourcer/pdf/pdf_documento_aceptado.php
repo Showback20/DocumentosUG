@@ -22,7 +22,7 @@ $formato='<body>
 <div class="director">
     <p><b>C.'.$nombre.'</b><br>
 
-        Presente <br> <br> <br>  </p>
+        Presente <br>   </p>
 </div>
 <br>
 <div><p> En respuesta a su solicitud, con referencia a la Prórroga para la entrega de '.$documentos.', requisito para inscripcion a '.$semestre.'° del programa educativo de '.$carrera.'.</p></div>
